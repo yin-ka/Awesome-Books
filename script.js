@@ -35,6 +35,8 @@ function removeBooks (index) {
     listBooks.splice(index, 1)
 
     displayBooks (listBooks);
+    localStorage.setItem('listBooks', listBooks);
+
 }
 
 function logSubmit(event) {
@@ -43,6 +45,7 @@ function logSubmit(event) {
 
     addBooks (bookTitle, bookAuthor)
     displayBooks (listBooks)
+    localStorage.setItem('listBooks', listBooks);
 
     event.preventDefault();
   }

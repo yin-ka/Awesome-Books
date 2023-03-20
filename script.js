@@ -20,21 +20,23 @@ displayBooks (listBooks);
 
 function displayBooks (listBooks){
 const bookSection = document.querySelector('.books');
-bookSection.innerHTML = listBooks.map((book) => `
+bookSection.innerHTML = listBooks.map((book, index) => `
 <div>
 <p>${book.title}</p>
         <p>${book.author}</p>
-        <button type="button">remove</button>
+        <button type="button" onclick="removeBooks(${index})">remove</button>
         <hr>
         </div>
         `).join('');
 
-        function removeBooks (index) {
-    listBooks.splice(index, 1)
-}}
+}
 
-// const form = document.getElementById('form');
-// form.addEventListener('submit', logSubmit);
+function removeBooks (index) {
+    listBooks.splice(index, 1)
+
+    displayBooks (listBooks);
+}
+
 function logSubmit(event) {
     const bookTitle = document.querySelector('#book-title').value;
     const bookAuthor = document.querySelector('#book-author').value;

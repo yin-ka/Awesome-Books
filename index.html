@@ -9,40 +9,23 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <main class="main">
-        <div>
-            <div>
+    <main class="main-section">
+        <div class="container">
+            <div class="title">
                 <h1>Awesome Books</h1>
-            </div>
-            <div class="books">
-
-                <!-- <div>
-                    <p>Dolore sea</p>
-                    <p>Ea ut dolores ipsum</p>
-                    <button type="button">remove</button>
-                    <hr>
-                </div>
-                <div>
-                    <p>Second book</p>
-                    <p>Ea ut dolores ipsum</p>
-                    <button type="button">remove</button>
-                    <hr>
-                </div> -->
+            </div>  
+            <div class="fav-books">
 
             </div>
+            <form action="" id="formID">
+                <input type="text" placeholder="Title" id="book-title" required><br><br>
+                <input type="text" placeholder="Author" id="book-author" required><br><br>
+                <button type="submit" id="submit-button" onclick="logSubmit(event)">Add</button>
+            </form>
         </div>
-        
-        <form>
-            <ul>
-                <li><input placeholder="Title" type="text" id="book-title"></li>
-                <br>
-                <li><input placeholder="Author" type="text" id="book-author"></li>
-                <br>
-                <button type="submit" id="submit-button" class="submit" onclick="logSubmit(event)">Add</button>
-            </ul>
-        </form>
+        <div class="out" hidden></div>
     </main>
-
+    
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>

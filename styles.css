@@ -8,6 +8,8 @@ ul {
     list-style-type: none;
 }
 
-.main {
-    padding: 2rem 0 0 2rem;
-}
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+  }

@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
-.container {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 15%;
+.main-section {
+    padding: 10% 40%;
   }
